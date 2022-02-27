@@ -1,0 +1,197 @@
+﻿@model IEnumerable<WebApplication1.Models.Review>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+
+
+
+<form method="get" >
+    <label for="minRating">Minimum rating</label>
+    <select name="minRating" class="form-select">
+
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+
+<label for="prioText">Prioritize by text:</label>
+<select name="prioText">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+
+</select>
+
+<label for="orderRating">Order by Rating:</label>
+<select name="orderRating">
+
+    <option value="Highest">Highest First</option>
+    <option value="Lowest">Lowest First</option>
+</select>
+
+
+<label for="orderDate">Order by date:</label>
+<select name="orderDate">
+
+    <option value="Newest">Newest First</option>
+    <option value="Oldest">Oldest First</option>
+</select>
+
+<button type="submit" class="btn btn-success">Filter</button>
+</form>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewFullText)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.reviewText)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.numLikes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numShares)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewCreatedOn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewCreatedOnDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewCreatedOnTime)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.reviewerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewerUrl)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.reviewerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reviewerEmail)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.sourceType)
+            </th>*@
+            @*<th>
+                @Html.DisplayNameFor(model => model.isVerified)
+            </th>*@
+           @* <th>
+                @Html.DisplayNameFor(model => model.source)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.sourceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sourceId)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.href)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.logoHref)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewFullText)
+            </td>
+           @* <td>
+                @Html.DisplayFor(modelItem => item.reviewText)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.numLikes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numComments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numShares)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewCreatedOn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewCreatedOnDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewCreatedOnTime)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.reviewerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewerUrl)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reviewerEmail)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.sourceType)
+            </td>*@
+           @* <td>
+                @Html.DisplayFor(modelItem => item.isVerified)
+            </td>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.source)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.sourceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sourceId)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.href)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.logoHref)
+            </td>*@
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>
