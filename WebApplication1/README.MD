@@ -9,4 +9,6 @@ Next you go to Tools
 
 <br/>
 Then NuGet Package Manager and Package Manager Console 
-![Screenshot_2](https://user-images.githubusercontent.com/47032530/155901149-47324152-6cf8-464b-8fe5-5c9020beef21.png)
+
+
+![Screenshot_2](https://user-images.githubusercontent.com/47032530/155901166-1a1614a7-075b-42c8-b79a-705a0de2a651.png)
