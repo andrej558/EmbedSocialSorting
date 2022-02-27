@@ -13,7 +13,7 @@ namespace WebApplication1.Controllers
 
         private readonly ReviewDbContext _reviewDbContext;
 
-        private readonly string reviewsPath = "D:\\EmbedSocial\\WebApplication1\\wwwroot\\reviews.json";
+        
 
         private readonly ReaderJson jsonReader = new ReaderJson();
 
@@ -26,13 +26,13 @@ namespace WebApplication1.Controllers
 
                 if (_reviewDbContext.reviews.Count() == 0)
                 {
+                    
+                    string rootPath = Directory.GetCurrentDirectory();
+
+                    string fullPath = Path.Combine(rootPath, "wwwroot\\reviews.json");
 
 
-                    //var webClient = new WebClient();
-                    //var json = webClient.DownloadString(reviewsPath);
-                    //var reviews = JsonConvert.DeserializeObject<Review>(json);
-
-                    var reviews = jsonReader.GetData(reviewsPath);
+                    var reviews = jsonReader.GetData(fullPath);
 
 
                     foreach (var review in reviews)
