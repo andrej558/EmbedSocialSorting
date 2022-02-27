@@ -12,3 +12,15 @@ Then NuGet Package Manager and Package Manager Console
 
 
 ![Screenshot_2](https://user-images.githubusercontent.com/47032530/155901166-1a1614a7-075b-42c8-b79a-705a0de2a651.png)
+
+
+After which you have to type Update-Database, as shown below
+
+![Screenshot_3](https://user-images.githubusercontent.com/47032530/155901270-de83658e-aeba-40ea-aa72-a5745cb0e271.png)
+
+<br/>
+
+Next just go Debug -> Start Without Debugging
+
+![Screenshot_4](https://user-images.githubusercontent.com/47032530/155901370-a9acd0f4-6ec2-4788-82e4-127b70f690c6.png)
+
