@@ -26,7 +26,7 @@ Next just go Debug -> Start Without Debugging
 
 By doing this, the local database is created with the table reviews.
 
-We might initially get this error: 
+We might initially get this error: <br/>
 ![Screenshot_5](https://user-images.githubusercontent.com/47032530/155901526-0281f0b3-6723-4d32-ba9f-7193c10f235c.png)
 
 That is nothing to fear. Simply just Run the application again.
