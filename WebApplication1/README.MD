@@ -24,3 +24,13 @@ Next just go Debug -> Start Without Debugging
 
 ![Screenshot_4](https://user-images.githubusercontent.com/47032530/155901370-a9acd0f4-6ec2-4788-82e4-127b70f690c6.png)
 
+By doing this, the local database is created with the table reviews.
+
+We might initially get this error: 
+![Screenshot_5](https://user-images.githubusercontent.com/47032530/155901526-0281f0b3-6723-4d32-ba9f-7193c10f235c.png)
+
+That is nothing to fear. Simply just Run the application again.
+
+<br/><br/>
+After successfull launch with no errors the app should start on localhost:7174
+
