@@ -32,5 +32,5 @@ We might initially get this error: <br/>
 That is nothing to fear. Simply just Run the application again.
 
 <br/><br/>
-After successfull launch with no errors the app should start on localhost:7174
+After successfull launch with no errors the app should start on localhost:7174 in the browser.
 
